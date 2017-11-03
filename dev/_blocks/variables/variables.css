@@ -1,0 +1,17 @@
+
+:root {
+    --brand-color-1: white;
+    --brand-color-2: black;
+
+    @custom-media --XS  (width < 576px);
+    @custom-media --S   (width < 768px);
+    @custom-media --M   (width < 992px);
+    @custom-media --L   (width < 1200px);
+    @custom-media --XL  (width < 1500px); /* Do not use! Standard styles. */
+    @custom-media --XXL (width >= 1500px);
+
+    --font-dafoe: 'Mr Dafoe', cursive;
+    --font-lora: 'Lora', serif;
+    --font-old: 'Old Standard TT', serif;
+}
+

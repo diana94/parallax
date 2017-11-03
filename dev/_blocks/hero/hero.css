@@ -1,0 +1,44 @@
+
+.hero {
+    position: relative;
+    padding: 240px 0 258px;
+    background: url('../images/hero.jpg') 0 0 no-repeat / cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+
+    &__title {
+        font-size: 40px;
+        color: currentColor;
+        font-weight: 100;
+        font-family: var(--font-lora);
+        text-transform: uppercase;
+        letter-spacing: 25px;
+    }
+
+    &__decor {
+        font-size: 60px;
+        font-family: var(--font-dafoe);
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    &__subtitle {
+        margin-top: -5px;
+        font-size: 18px;
+        color: currentColor;
+    }
+
+    &__scroll-button {
+        position: absolute * 50% 40px;
+        transform: translateX(-50%);
+        size: 34px;
+        padding: 0;
+        text-align: center;
+    }
+
+    & .button {
+        margin-top: 20px;
+    }
+}
+

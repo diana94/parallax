@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Project42</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <style>
+        :root {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.2;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .box {
+            width: 1140px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        @media (max-width:575px) {
+            .box {
+                max-width: 480px
+            }
+        }
+
+        .button,
+        .hero {
+            color: #fff;
+            text-align: center
+        }
+
+        .button {
+            vertical-align: middle;
+            margin: 0;
+            background: 0 0;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            font: 18px 'Lora', serif;
+            text-transform: capitalize;
+            padding: 10px 20px 12px
+        }
+
+        .hero {
+            padding: 240px 0 258px;
+            background: url(../images/hero.jpg) 0 0 no-repeat/cover;
+            background-attachment: fixed
+        }
+
+        .hero__title {
+            color: currentColor;
+            font-weight: 100;
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            letter-spacing: 25px
+        }
+
+        .hero__decor {
+            font-family: 'Mr Dafoe', cursive;
+            text-transform: none;
+            letter-spacing: normal
+        }
+
+        .hero__subtitle {
+            font-size: 18px;
+            color: currentColor
+        }
+
+        .hero__scroll-button {
+            bottom: 40px;
+            left: 50%;
+            position: absolute;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 34px;
+            height: 34px;
+            padding: 0;
+            text-align: center
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <h1 class="hero__title">
+            <p class="hero__decor">The
+            </p>
+            <p>Abdullah Noman
+            </p>
+        </h1>
+        <p class="hero__subtitle">User Interface & User Experience Designer
+        </p><button class="button">Hire now</button><button class="button hero__scroll-button"><i class="icon-arrow_down"></i></button></section>
+    <section class="greeting">
+        <div class="box"></div>
+    </section>
+    <footer class="footer">
+        <div class="box"></div>
+    </footer>
+    <link href="https://fonts.googleapis.com/css?family=Lora:300,400|Mr+Dafoe|Old+Standard+TT:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/index.min.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

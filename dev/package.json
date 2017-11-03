@@ -1,0 +1,30 @@
+{
+  "name": "Project42",
+  "private": true,
+  "description": "Base project for layout",
+  "repository": {
+    "type": "git",
+    "url": "git@git.inostudio.net:r.pogorelov/project42.git"
+  },
+  "author": {
+    "name": "Roman Pogorelov",
+    "email": "r.pogorelov@inostudio.com"
+  },
+  "devDependencies": {
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "postcss-color-function": "^4.0.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-import": "^10.0.0",
+    "postcss-short": "^4.1.0",
+    "run-sequence": "^2.1.0"
+  }
+}
