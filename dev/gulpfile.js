@@ -9,10 +9,11 @@ var gulp                  = require('gulp'),
     cssnext               = require('postcss-cssnext'),
     csscolorfunctions     = require('postcss-color-function'),
     cssmqpacker           = require('css-mqpacker'),
-    inlinesource          = require('gulp-inline-source'),
     flatten               = require('gulp-flatten'),
-    postcssShort         = require('postcss-short'),
-    cssnano               = require('cssnano');
+    postcssShort          = require('postcss-short'),
+    cssnano               = require('cssnano'),
+    concat                = require('gulp-concat'),
+    minify                = require('gulp-minify');
 
 var browsersList = [
     "last 3 versions",
@@ -75,7 +76,7 @@ gulp.task('pug', function () {
             dirname: ''
         }))
         .pipe(flatten({}))
-        .pipe(gulp.dest('_pages'));
+        .pipe(gulp.dest(''));
 });
 
 // HTML beautify
@@ -126,18 +127,10 @@ gulp.task('cssminify', function () {
         .pipe(gulp.dest('stylesheets/'));
 });
 
-// CSS critical inline
-gulp.task('inlinesource', function () {
-
-    return gulp.src('_pages/*.html')
-        .pipe(inlinesource())
-        .pipe(gulp.dest('./'));
-});
-
 // Flow 1
 gulp.task('flow-1', function () {
 
-    runSequence('pug', 'inlinesource', 'htmlbeautify', 'reload');
+    runSequence('pug', 'htmlbeautify', 'reload');
 });
 
 // Flow 2
@@ -149,7 +142,7 @@ gulp.task('flow-2', function () {
 // Build
 gulp.task('build', function () {
 
-    runSequence('css', 'cssminify', 'pug', 'inlinesource','htmlbeautify');
+    runSequence('css', 'cssminify', 'script', 'scriptminify', 'pug','htmlbeautify');
 });
 
 gulp.task('go', ['connect'], function () {
@@ -163,6 +156,7 @@ gulp.task('go', ['connect'], function () {
         '_blocks/**/*.css',
         '_pages/' + cssPath + '.css'
     ], ['flow-2']);
+
 });
 
 gulp.task('default', function () {

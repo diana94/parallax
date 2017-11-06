@@ -8,9 +8,7 @@
     margin-left: auto;
 
     @media (--XXL) {
-
         width: 1400px;
-
     }
 
     @media (--L) {
