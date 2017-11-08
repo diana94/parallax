@@ -1,3 +1,64 @@
 .greeting {
     position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute 0 0 0 *;
+        width: 50%;
+        background-color: #efefef;
+    }
+
+    & .box {
+        position: relative;
+        z-index: 9;
+        padding-top: 215px;
+        padding-bottom: 240px;
+        background-color: #efefef;
+    }
+
+    &__content {
+        width: calc(100% - 470px);
+        padding-left: 125px;
+    }
+
+    &__decor {
+        font-size: 30px;
+        font-family: var(--font-dafoe);
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #969696;
+    }
+
+    &__button {
+        margin-top: 35px;
+    }
+
+    &__images {
+        position: absolute 0 0 0 *;
+        margin-top: -500px;
+    }
+
+    &__image {
+        margin-top: 500px;
+        position: relative;
+        z-index: 9;
+    }
+
+    &__decor-frame {
+        position: relative;
+        right: 160px;
+        width: 310px;
+        height: 430px;
+        margin-top: -500px;
+        border: 3px solid #ccc;
+    }
 }

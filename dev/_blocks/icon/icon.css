@@ -29,6 +29,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_right:before {
+  content: "\e905";
+}
+.icon-arrow_down:before {
+  content: "\e906";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-google:before {
+  content: "\e904";
+}
 .icon-dribbble:before {
   content: "\eaa7";
 }
@@ -40,16 +52,4 @@
 }
 .icon-facebook:before {
   content: "\e902";
-}
-.icon-instagram:before {
-  content: "\e903";
-}
-.icon-google:before {
-  content: "\e904";
-}
-.icon-arrow_right:before {
-  content: "\e905";
-}
-.icon-arrow_down:before {
-  content: "\e906";
 }
